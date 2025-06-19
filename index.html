@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://kit.fontawesome.com/0815a88854.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("d6PN2QHfdFtulTDe0"); // Replacing with my EmailJS public key
+    })();
+</script>
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer & UI / UX Designer</p>
+                <h1>Namaskaram! <br> I'm Aditya Kumar <br>(<span> NIT Patna</span>, 2026 )</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------about section--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2025-01-13 at 22.58.14_f6fa35f7.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Namaskaram!, <br> I'm an undergraduate student at the National Institute of Technology Patna, majoring in Electronics and Communication Engineering. I have a strong passion for full stack web development, UI/UX design, and I am skilled in creating engaging and user-friendly websites. Additionally, I have a keen interest in problem-solving. I enjoy tackling complex challenges and finding efficient solutions. I am also an art and literature enthusiast, so do invite me in your mushairas :)</p>
+                    <div class="tab-titles">
+                       <p class="tab-links" onmouseover="opentab('education', this)">Education</p>
+                        <p class="tab-links" onmouseover="opentab('skills', this)">Skills</p>
+                        <p class="tab-links" onmouseover="opentab('experience', this)">Experience</p>
+                         <p class="tab-links" onmouseover="opentab('por', this)">Position of Responsibilities</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                             <li><span>2022-2026</span><br> B.Tech, <i>Electronics and Communication Engineering</i>; NIT Patna; CGPA: 8.81</li>
+                            <li><span>2020-2021</span><br> Intermediate (XII), <i>CBSE</i>, St. Aloysius Senior Secondary School, Jabalpur; Percentage: 95.80 %</li>
+                            <li><span>2018-2019</span><br> Matriculation (X), <i>CBSE</i>, St. Aloysius Senior Secondary School, Jabalpur; Percentage: 93.60 %</li>
+                           
+                        </ul>
+                    </div>
+
+                     <div class="tab-contents " id="por">
+                        <ul>
+                             <li><span>NIT Patna Tech and Cult Fest</span><br>Technical Co Lead</li>
+                            <li><span>NITP MUN 2.0 </span><br>Chief of Executive Board</li>
+                            <li><span>Expresso NITP </span><br>Vice President</li>
+                            <li><span>Design Company NITP </span><br>Marketing and PR Lead</li>
+                            <li><span>Think India SC NITP </span><br>PR Lead</li>
+                            <li><span>Hack'O'Fest Hackathon NITP </span><br>Event Management and Coordination</li>
+                            <li><span>Tesla NITP </span><br>Website Development Team</li>
+                            <li><span>NSS Sankalp NIT Patna</span><br>Senior Educator</li>
+                            <li><span>GYB Social Club NITP </span><br>Content and Planning Lead</li>
+                         
+                           
+                        </ul>
+                    </div>
+                    
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>C++, Python, C, Java, HTML, CSS, JavaScript (ES6+), SQL</li>
+                            <li><span>Frameworks & Tools: </span><br>React.js, Node.js, Vue.js, Express.js, Next.js, VS Code, Git, GitHub, Redux, APIs (REST &
+ JSON), Figma, Postman, Linux, Docker, Netlify, Vercel</li>
+                            <li><span>Database/Cloud: </span><br>MongoDB, MySQL, Appwrite</li>
+                             <li><span>Problem-Solving: </span><br>500+ DSA Problems solved, Max 1741 @LeetCode Contests</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ApexPlanet Software Pvt. Ltd., Gaya Bihar- INDIA <i> (Jun'25-Current) </i></span><br>Front-End Developer Intern</li>
+                            <li><span>Expresso‐ The Literary & Art Club NIT Patna, Official Website <i> (Dec'23-May'25) </i></span><br>Overall Co‐Lead & Project Coordinator</li>
+                            <li><span>Outlier AI <i> (Part Time) </i></span><br>Prompt Engineer </li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- .........................portfolio.................... -->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/image.png">
+                <div class="layer">
+                    <h3>Expresso-The Literary & Art Club NIT Patna</h3>
+                    <p>Launched a revamped club website with React.js, Next.js, and Tailwind CSS, resulting in 50+ daily users, an
+ average session duration of 4.5 minutes, and a bounce rate below 25%. Boosted user engagement by 55% through an intuitive UI/UX that effectively showcased events, talent, and
+ real‐time updates, significantly increasing member participation and event visibility. </p>
+                    <a href="https://expressonitp.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Screenshot 2025-06-19 103425.png">
+                <div class="layer">
+                    <h3>Mass Mail: A GUI‐based Python application to send bulk emails</h3>
+                    <p>Built a GUI‐based tool using Python, Tkinter, and SMTP to automate bulk email delivery to 5,000+ recipients via CSV parsing, enabling per‐user customized subject and body, with integrated robust error handling and a real‐time progress bar for enhanced transparency and usability.Attained a 90% delivery success rate during test runs; reduced manual email workload by over 50% for smallbusinesses and college clubs.</p>
+                    <a href="https://github.com/adityakumar393/Mass-Mail"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Screenshot 2025-06-19 121711.png">
+                <div class="layer">
+                    <h3> Let's Chat </h3>
+                    <p> Built a scalable real‐time messaging platform using React.js, Socket.io, Zustand, and Tailwind CSS, with global state management, a responsive UI, and an efficient back end for seamless communication and optimized data handling. Achieved a 30% reduction in latency, and reduced development time by 50% through reusable components and dynamic interfaces.</p>
+                    <a href="https://github.com/adityakumar393/LetsChat01"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/adityakumar393" class="btn">See More on GitHub</a>
+    </div>
+</div>
+
+
+
+<!-- --------------------contact--------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i>adityakr03@gmail.com</p>
+                <p><i class="fas fab fa-whatsapp"></i>+91-9406882258</p>
+                <div class="social-icons">
+                    <a href="https://github.com/adityakumar393"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.instagram.com/adityakumar.393/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/adityakumar393"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resumeoffcampus (1).pdf" download class="btn btn2"class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+  <input type="text" name="Name" placeholder="Your Name Please" required>
+  <input type="email" name="Email" placeholder="Your Email Please" required>
+  <textarea name="Message" rows="6" placeholder="Your Message....." required></textarea>
+  <button type="submit" class="btn btn2">Share</button>
+</form>
+<span id="msg"></span>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+<div class="copyright">
+    <p>Designed and Developed by Aditya Kumar</p>
+</div>
+
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, element){
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    element.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-500px";
+        }
+    </script>
+  
+
+
+<script>
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Disable submit button and update text
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Sending...";
+
+        emailjs.sendForm('service_54j6kiq', 'template_fy7fc37', form)
+            .then(function () {
+                alert("Thank you for connecting!");
+                form.reset();
+            }, function (error) {
+                msg.innerHTML = "Oops! Something went wrong.";
+                console.error('FAILED...', error);
+            })
+            .finally(() => {
+                // Start 10-second cooldown
+                let cooldown = 10;
+                msg.innerHTML = `Please wait ${cooldown} seconds before submitting again.`;
+
+                const interval = setInterval(() => {
+                    cooldown--;
+                    if (cooldown > 0) {
+                        msg.innerHTML = `Please wait ${cooldown} seconds before submitting again.`;
+                    } else {
+                        clearInterval(interval);
+                        msg.innerHTML = "";
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "Share";
+                    }
+                }, 1000);
+            });
+    });
+</script>
+
+
+</body>
+</html>
